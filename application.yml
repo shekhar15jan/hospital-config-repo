@@ -1,3 +1,11 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
+  profiles:
+    active: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
